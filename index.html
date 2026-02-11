@@ -66,9 +66,8 @@
 
         /* Main Content */
         .container {
-            max-width: 1400px;
-            margin: 60px auto;
-            padding: 0 40px;
+            margin: 60px 0;
+            padding: 0 40px; /* Same padding as header */
         }
 
         /* App Cards */
@@ -76,7 +75,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 30px;
-            justify-items: start; /* Aligns tiles to the left */
+            justify-items: start;
         }
 
         .app-card {
@@ -88,8 +87,8 @@
             text-decoration: none;
             color: #3C104D;
             display: block;
-            width: 100%; /* Ensures cards fill their grid cell */
-            max-width: 350px; /* Prevents cards from getting too wide */
+            width: 100%;
+            max-width: 350px;
         }
 
         .app-card:hover {
@@ -123,7 +122,7 @@
             }
 
             .container {
-                margin: 30px auto;
+                margin: 30px 0;
                 padding: 0 20px;
             }
 
