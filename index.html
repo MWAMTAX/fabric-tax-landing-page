@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,6 +76,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 30px;
+            justify-items: start; /* Aligns tiles to the left */
         }
 
         .app-card {
@@ -88,6 +88,8 @@
             text-decoration: none;
             color: #3C104D;
             display: block;
+            width: 100%; /* Ensures cards fill their grid cell */
+            max-width: 350px; /* Prevents cards from getting too wide */
         }
 
         .app-card:hover {
